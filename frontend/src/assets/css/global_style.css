@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+:root {
+    /* Color Variables */
+    --primary-color: #27ae60;
+    --secondary-color: #f38609;
+    --dark-color: #130f40;
+    --text-color: #666;
+    --light-bg: #f7f7f7;
+    --white: #fff;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --gradient: linear-gradient(135deg, #27ae60, #f38609);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.heading span {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.heading h3 {
+    font-size: 3rem;
+    color: var(--dark-color);
+}
+
+/* Update the .btn class - remove animation */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: var(--white);
+    background: var(--primary-color);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Update hover state with just soft glow */
+.btn:hover {
+    color: var(--white);
+    background: var(--secondary-color);
+    box-shadow: 0 0 8px rgba(243, 134, 9, 0.5);
+}
+
+.btn:disabled {
+    background-color: var(--dark-color) !important;
+    color: var(--white);
+}
+
+/* Card Styling */
+.card {
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+/* Form Styling */
+.form-container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    background: var(--light-bg);
+    margin-top: 0.5rem;
+}
+
+.form-label {
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 2rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 2rem 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+}
