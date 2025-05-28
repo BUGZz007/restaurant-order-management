@@ -1,3 +1,5 @@
+⚖️ License
+
 MIT License
 
 Copyright (c) 2025 Vishal Suthar (BUGZz007) and Sujata Nath
